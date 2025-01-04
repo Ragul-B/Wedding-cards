@@ -1,1 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Cards & Calendars</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Wedding Cards & Calendars</h1>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#wedding-cards">Wedding Cards</a></li>
+                    <li><a href="#calendars">Calendars</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content container">
+            <h2>Design Your Perfect Wedding Invitations</h2>
+            <p>Explore our premium collection of wedding cards and yearly calendars.</p>
+            <button class="btn btn-primary" onclick="scrollToSection('wedding-cards')">Shop Now</button>
+        </div>
+    </section>
+
+    <!-- Wedding Cards Section -->
+    <section id="wedding-cards">
+        <div class="container">
+            <h2>Wedding Cards Collection</h2>
+            <div class="filter-bar">
+                <label for="card-filter">Filter:</label>
+                <select id="card-filter">
+                    <option value="all">All</option>
+                    <option value="traditional">Traditional</option>
+                    <option value="modern">Modern</option>
+                    <option value="luxury">Luxury</option>
+                </select>
+            </div>
+            <div class="grid">
+                <!-- Cards dynamically loaded via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendars Section -->
+    <section id="calendars">
+        <div class="container">
+            <h2>Yearly Calendars</h2>
+            <p>Customizable calendars for every occasion.</p>
+            <div class="grid">
+                <!-- Calendars dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>Client Testimonials</h2>
+            <div class="carousel">
+                <!-- Testimonials dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">What is the delivery time?</button>
+                    <div class="accordion-content">
+                        <p>Delivery typically takes 5-7 business days depending on the design.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Can I customize my wedding card?</button>
+                    <div class="accordion-content">
+                        <p>Yes, all our wedding cards are fully customizable.</p>
+                    </div>
+                </div>
+                <!-- Add more FAQs -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Wedding Cards & Calendars. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+      </html>
